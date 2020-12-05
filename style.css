@@ -1,0 +1,147 @@
+/* HEADER */
+
+.header {
+    border: 6px solid black;
+    text-align: center;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTg3Pj-C8p_dIyx7jyPrCTW4I1S2XOm5sg34g&usqp=CAU');
+    color: black;
+    font-size: 25px;
+  }
+  
+  .cheader {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+  
+  .hheader {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+  }
+  
+  /* BUTTON design */
+  .bar {
+      background-color: #0f4161;
+    border: 2px solid black;
+      border-radius: 15px;
+      display: inline-block;
+      cursor: pointer;
+      color: white;
+      font-family: Ariel;
+      font-size: 17px;
+      padding: 5px 15px;
+      text-decoration: none;	
+  }
+  
+  
+  /* CALC design */
+  
+  #calc{
+    background-color: #79B2CA;
+    position: relative;
+    width: 400px;
+    border: 6px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+  }
+   h2 { text-align: center; }
+    
+  
+  input[type=button] {
+    background: lightGray;
+    width: 20%;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+  }
+  input[type=button]:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  input[type=button]:hover {
+    background-color: #0f4161;
+    color: white;
+  }
+  
+  input[type = text] {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 4px 0px 12px black inset;
+  }
+  
+  /* TEMP design */
+  
+  #temp{
+    background-color: #79B2CA;
+    position: relative;
+    width: 400px;
+    border: 6px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  /* CHARTS design */
+  
+  #charts{
+    background-image: url('https://inteng-storage.s3.amazonaws.com/img/iea/3oOp0zdaOW/sizes/chemistry-games-fun_resize_md.jpg');
+    position: relative;
+    width: 600px;
+    border: 6px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 20px 20px;
+  }
+  
+  /* Style The Dropdown Button */
+  .dropbtn {
+    background-color: white;
+    border: 4px solid #0f4161;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #79B2CA}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  
+  

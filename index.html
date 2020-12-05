@@ -1,0 +1,133 @@
+<html> 
+    <head>
+        <title> Project 1</title>
+        <link rel="stylesheet" href="/phone.css">
+       
+        <div class="header">
+       
+        <!-- Background image, see header css -->
+        
+  <h1>StudE-Guides</h1>
+  <p>Chemistry</p>
+</div>
+    </head>
+ 
+    
+    <body>
+   
+   <!-- BUTTONS -->
+        
+        <div id="bar">
+        <button class="bar" type="button" id="bhome">Home</button>
+            <button class="bar" type="button" id="bcharts">Helpful Hints</button>
+            <button class="bar" type="button" id="btemp">Temperature Converter</button>
+            <button class="bar" type="button" id="bcalc">Calculator</button>
+            
+        </div>
+        <br>
+        
+   <!-- CALCULATOR -->         
+                
+  <div id="calc">
+  <div class="cheader">
+  <h2>Calculator</h2>
+  </div>
+ 
+          <form name="calculator">
+            
+            <input type="text" name="answer" />
+            <br>
+            
+            <input type="button" value=" 1 " onclick="calculator.answer.value += '1'" />
+            <input type="button" value=" 2 " onclick="calculator.answer.value += '2'" />
+            <input type="button" value=" 3 " onclick="calculator.answer.value += '3'" />
+            <input type="button" value=" + " onclick="calculator.answer.value += '+'" />
+            <br/>
+            
+            <input type="button" value=" 4 " onclick="calculator.answer.value += '4'" />
+            <input type="button" value=" 5 " onclick="calculator.answer.value += '5'" />
+            <input type="button" value=" 6 " onclick="calculator.answer.value += '6'" />
+            <input type="button" value=" - " onclick="calculator.answer.value += '-'" />
+            <br>
+          
+            <input type="button" value=" 7 " onclick="calculator.answer.value += '7'" />
+            <input type="button" value=" 8 " onclick="calculator.answer.value += '8'" />
+            <input type="button" value=" 9 " onclick="calculator.answer.value += '9'" />
+            <input type="button" value=" x " onclick="calculator.answer.value += '*'" />
+            <br/>
+        
+            <input type="button" value=" C " onclick="calculator.answer.value = ''" />
+            <input type="button" value=" 0 " onclick="calculator.answer.value += '0'" />
+            <input type="button" value=" = " onclick="calculator.answer.value = eval(calculator.answer.value)" />
+            <input type="button" value=" / " onclick="calculator.answer.value += '/'" />
+            
+            </form>
+            </div>
+            
+<!-- CHARTS -->
+            <div id="charts">
+            <div class="hheader">
+            <h2>Helpful Hints</h2>
+            </div>
+                 <div class="dropdown">
+  <button class="dropbtn">Formula Charts</button>
+  <div class="dropdown-content">
+    <a href="#">Chemistry Formulas</a>
+    <a href="#">PH Scale</a>
+    <a href="#">Units and Abbreviations</a>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Periodic Table</button>
+  <div class="dropdown-content">
+    <a href="#">Periodic Table</a>
+    <a href="#">Common Acids and Bases</a>
+    <a href="#">Units and Abbreviations</a>
+  </div>
+  <div class="dropdown">
+  <button class="dropbtn">Safety Charts</button>
+  <div class="dropdown-content">
+    <a href="#">OSHA Quick Reference</a>
+    <a href="#">Common Haz Mat</a>
+    <a href="#">Important Numbers</a>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- TEMP CONVERTER -->
+
+            <div id="temp">
+                <h2>Temperature Converter</h2>
+<p>Enter Fahrenheight value to convert to Celcius and Kelvin:</p>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter1(this.value); temperatureConverter2(this.value);" onchange="temperatureConverter1(this.value); temperatureConverter2(this.value);">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
+<script>
+function temperatureConverter1(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+<script>
+function temperatureConverter2(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+</script>
+
+            </div>
+       
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="/phone.js" type="text/javascript"></script>>
+   
+   </body>
+</html>
